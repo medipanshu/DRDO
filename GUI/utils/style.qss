@@ -1,0 +1,140 @@
+/* Neumorphic/Dark Theme */
+QWidget {
+  background: #2E3136;
+  color: #E0E0E0;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 10pt;
+}
+
+/* Soft “raised” panels */
+QFrame, QScrollArea, QListView {
+  background: #2E3136;
+  border: 0.5px solid #CFD8DC;
+  border-radius: 0px;
+  /* light shadow top-left, dark shadow bottom-right */
+  box-shadow: -4px -4px 8px #3A3D43, 4px 4px 8px #222528;
+}
+
+/* Image Boxes */
+QLabel#BoxOriginalImage,
+QLabel#BoxDetectedImage,
+QLabel#BoxMetadataImage,
+QLabel#BoxEditImage {
+  background: #2E3136;
+  border-radius: 8px;
+  padding: 6px;
+}
+
+/* Neumorphic Buttons */
+QPushButton {
+  background: #2E3136;
+  border: 0.5px solid #CFD8DC;
+  border-radius: 0px; /* 8px */
+  padding: 8px 16px;
+  box-shadow: -2px -2px 6px #3A3D43, 2px 2px 6px #222528;
+}
+QPushButton:pressed {
+  box-shadow: inset -2px -2px 6px #3A3D43, inset 2px 2px 6px #222528;
+}
+
+/* ComboBox, RadioButton, etc. get same treatment */
+QComboBox, QRadioButton {
+  background: #2E3136;
+  border-radius: 6px;
+  padding: 4px;
+}
+
+/* Slider handle */
+QSlider::groove:horizontal {
+  height: 6px; border-radius: 3px; background: #3A3D43;
+}
+QSlider::handle:horizontal {
+  width: 16px; height: 16px; margin: -5px 0;
+  border-radius: 8px; background: #2E3136;
+  box-shadow: -2px -2px 6px #3A3D43, 2px 2px 6px #222528;
+}
+
+*[class="maximizeButton"] {
+    margin-top: 5px;
+    margin-right: 5px;
+    /* background-color: #4A90E2; /* Optional: Add a background color */
+    border: none; /* Optional: Remove border */
+    border-radius: 3px; /* Optional: Add rounded corners */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Dark variant: set in code via button.setProperty("variant","dark") */
+QPushButton[variant="dark"] {
+  background-color: #1F2937;       /* dark:bg-gray-800 */
+  border: 1px solid #374151;       /* dark:border-gray-700 */
+}
+QPushButton[variant="dark"]:hover {
+  background-color: #374151;       /* dark:hover:bg-gray-700 */
+}
+QPushButton[variant="dark"]:focus {
+  border: 4px solid #374151;       /* dark:focus:ring-gray-700 */
+}
+/* Dark variant: set via label.setProperty("variant","dark") */
+QLabel[variant="dark"] {
+  background-color: #374151;       /* dark:bg-gray-700 */
+  color: #D1D5DB;                  /* dark:text-gray-300 */
+}
+QComboBox[mode="dark"] QAbstractItemView {
+  background-color: #374151;          /* dark:bg-gray-700 */
+  color: #E5E7EB;                     /* dark:text-gray-200 */
+  border: none;
+}
+QComboBox[mode="dark"] QAbstractItemView::item:hover {
+  background-color: #4B5563;          /* dark:hover:bg-gray-600 */
+  color: #FFFFFF;                     /* dark:hover:text-white */
+}
+
+
+
+
+/* Scrollbar inside dropdown */
+QComboBox QScrollBar:vertical {
+  width: 8px;
+  background: transparent;
+}
+QComboBox QScrollBar::handle:vertical {
+  background: #CBD5E1;                /* gray-300 */
+  min-height: 20px;
+  border-radius: 4px;
+}
+QComboBox[mode="dark"] QComboBox QScrollBar::handle:vertical {
+  background: #4B5563;                /* gray-600 */
+}
+QComboBox QScrollBar::handle:vertical:hover {
+  background: #94A3B8;                /* gray-400 */
+}
+
+
+/* Dark mode variant (set in code via combo.setProperty("mode","dark")) */
+QComboBox[mode="dark"] {
+  background-color: #2563EB;       /* dark:bg-blue-600 */
+}
+QComboBox[mode="dark"]:hover {
+  background-color: #1E40AF;       /* dark:hover:bg-blue-700 */
+}
+QComboBox[mode="dark"]:focus {
+  border: 2px solid #1E3A8A;       /* dark:focus:ring-blue-800 approximated */
+}
+
+
+
+

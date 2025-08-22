@@ -1,0 +1,45 @@
+QMainWindow {
+    background-color: #F5F7FA;
+    color: #2E3A59;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 10pt;
+}
+
+QLabel {
+    color: #2E3A59;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+QMenuBar {
+    background-color: #2E3A59;
+    color: white;
+}
+
+QMenuBar::item:selected {
+    background: #4A90E2;
+}
+QMenu {
+    background-color: #FFFFFF;
+    border: 1px solid #D1D9E6;
+}
+
+QMenu::item:selected {
+    background-color:rgb(245, 15, 15);
+}
+
+QSlider::groove:horizontal {
+    height: 6px;
+    background: #D1D9E6;
+    border-radius: 3px;
+}
+
+QSlider::handle:horizontal {
+    background: #50E3C2;
+    width: 14px;
+    border-radius: 7px;
+    margin: -4px 0;
+}
+
